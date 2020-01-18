@@ -1,41 +1,51 @@
 {
     "editor.fontSize": 18,
-    "terminal.integrated.fontSize": 18,
     "editor.minimap.enabled": true,
-    "terminal.integrated.inheritEnv": false,
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
-    "git.autofetch": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleEnabled": false,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveTimeout": 3000,
     "editor.rulers": [
         80,
-        100
+        90,
+        100,
     ],
-    "editor.formatOnSaveTimeout": 1500,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
+    },
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.inheritEnv": true,
+    "git.autofetch": true,
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#2e2e2e"
     },
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Args": [
         "--max-line-length=120",
-        "--ignore",
-        "E402",
+        // "--ignore",
+        // "E402",
     ],
-    "python.linting.pycodestyleArgs": [
-        "--enable=W0614",
-        "--max-line-length=120",
-    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.lintOnSave": true,
     "python.linting.pylintArgs": [
         "--max-line-length=120",
         "--enable=W0614",
     ],
-    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,
+    "python.jediEnabled": false,
     "[python]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         },
+        "editor.defaultFormatter": "ms-python.python",
     },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "diffEditor.renderSideBySide": false,
 }
